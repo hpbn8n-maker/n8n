@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快捷連結頁面</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            padding: 32px 24px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: #0f172a;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: var(--primary-color);
+            border-radius: 10px;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px -2px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        @media (min-width: 640px) {
+            .container {
+                padding: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>快捷導覽連結</h1>
+        
+        <div class="btn-group">
+            <a class="btn" href="https://docs.google.com/spreadsheets/d/1OhQ3T9i7OGlOf7mBIwULiPDddlgSm5H9EMXwA7myh4k/edit?gid=87639934#gid=87639934" target="_blank" rel="noopener noreferrer">
+                Google 試算表
+            </a>
+
+            <a class="btn" href="https://hpbn8n-maker.github.io/n8n/off_days_viewer.html" target="_blank" rel="noopener noreferrer">
+                請假檢視器 (Off Days Viewer)
+            </a>
+
+            <a class="btn" href="https://endanger-each-cattishly.ngrok-free.dev/form/07b6e0dd-e102-4075-a0c7-32c1edb2b356" target="_blank" rel="noopener noreferrer">
+                設定 / 測試 / 同步 表單
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
